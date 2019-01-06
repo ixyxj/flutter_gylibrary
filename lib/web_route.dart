@@ -136,6 +136,7 @@ class _WebViewRouteState extends State<WebViewRoute> {
   Widget build(BuildContext context) {
     return WillPopScope(
         child: Scaffold(
+          key: _scaffoldKey,
           appBar: this.widget.buildTitleBar(context) ??
               AppBar(
                 title: SingleChildScrollView(
